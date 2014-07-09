@@ -4,7 +4,8 @@
  */
 
 
-var Rule = require('./rule');
+var $ = require('jquery'),
+  Rule = require('./rule');
 
 function toNumber(value){
   return parseFloat(value);

@@ -4,7 +4,8 @@
  */
 
 
-var BUI = require('bui-common'),
+var $ = require('jquery'),
+  BUI = require('bui-common'),
   Component = BUI.Component,
   TipItem = require('../tips').Item,
   Valid = require('../valid'),

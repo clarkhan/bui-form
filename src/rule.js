@@ -3,7 +3,8 @@
  * @ignore
  */
 
-var BUI = require('bui-common');
+var $ = require('jquery'),
+  BUI = require('bui-common');
 /**
  * @class BUI.Form.Rule
  * 验证规则

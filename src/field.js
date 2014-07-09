@@ -3,23 +3,23 @@
  * @ignore
  */
 var BUI = require('bui-common'),
-  Field = require('./field/base');
+  Field = require('./fields/base');
 
 BUI.mix(Field, {
-  Text : require('./field/text'),
-  Date : require('./field/date'),
-  Select : require('./field/select'),
-  Hidden : require('./field/hidden'),
-  Number : require('./field/number'),
-  Check : require('./field/check'),
-  Radio : require('./field/radio'),
-  Checkbox : require('./field/checkbox'),
-  Plain : require('./field/plain'),
-  List : require('./field/list'),
-  TextArea : require('./field/textarea'),
-  Uploader : require('./field/uploader'),
-  CheckList : require('./field/checklist'),
-  RadioList : require('./field/radiolist')
+  Text : require('./fields/text'),
+  Date : require('./fields/date'),
+  Select : require('./fields/select'),
+  Hidden : require('./fields/hidden'),
+  Number : require('./fields/number'),
+  Check : require('./fields/check'),
+  Radio : require('./fields/radio'),
+  Checkbox : require('./fields/checkbox'),
+  Plain : require('./fields/plain'),
+  List : require('./fields/list'),
+  TextArea : require('./fields/textarea'),
+  Uploader : require('./fields/uploader'),
+  CheckList : require('./fields/checklist'),
+  RadioList : require('./fields/radiolist')
 });
 
 module.exports = Field;

@@ -3,7 +3,8 @@
  * @ignore
  */
 
-var CLS_ERROR = 'x-form-error',
+var $ = require('jquery'),
+  CLS_ERROR = 'x-form-error',
   Valid = require('./valid');
 
  /**

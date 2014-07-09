@@ -3,7 +3,8 @@
  * @ignore
  */
 
-var Field = require('./base');
+var $ = require('jquery'),
+  Field = require('./base');
 
 
 var PlainFieldView = Field.View.extend({

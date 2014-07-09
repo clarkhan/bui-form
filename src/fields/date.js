@@ -5,7 +5,8 @@
  */
 
 
-var BUI = require('bui-common'),
+var $ = require('jquery'),
+  BUI = require('bui-common'),
   Field = require('./base'),
   DateUtil = BUI.Date;/*,
   DatePicker = require('bui-calendar').DatePicker*/

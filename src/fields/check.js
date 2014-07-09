@@ -3,7 +3,8 @@
  * @ignore
  */
 
-var Field = require('./base');
+var $ = require('jquery'),
+  Field = require('./base');
 
 /**
  * 可选中菜单域

@@ -4,14 +4,15 @@
  */
 
   
-var BUI = require('bui-common'),
+var $ = require('jquery'),
+  BUI = require('bui-common'),
+  FieldContainer = require('./fieldcontainer'),
+  Component = BUI.Component,
   TYPE_SUBMIT = {
     NORMAL : 'normal',
     AJAX : 'ajax',
     IFRAME : 'iframe'
-  },
-  FieldContainer = require('./fieldcontainer'),
-  Component = BUI.Component;
+  };
 
 var FormView = FieldContainer.View.extend({
   _uiSetMethod : function(v){
@@ -48,6 +49,7 @@ var Form = FieldContainer.extend({
   },
   _initButtonBar : function(cfg){
     var _self = this;
+
     BUI.use('bui/toolbar',function(Toolbar){
       buttonBar = new Toolbar.Bar(cfg);
       _self.set('buttonBar',buttonBar);

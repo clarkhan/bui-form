@@ -2,7 +2,8 @@
  * @fileOverview 表单字段的容器扩展
  * @ignore
  */
-var BUI = require('bui-common'),
+var $ = require('jquery'),
+  BUI = require('bui-common'),
   Field = require('./field'),
   GroupValid = require('./groupvalid'),
   PREFIX = BUI.prefix;

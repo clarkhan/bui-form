@@ -5,7 +5,8 @@
  */
 
 
-var BUI = require('bui-common'),
+var $ = require('jquery'),
+  BUI = require('bui-common'),
   prefix = BUI.prefix,
   Overlay = require('bui-overlay').Overlay,
   FIELD_TIP = 'data-tip',
