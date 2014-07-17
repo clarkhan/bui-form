@@ -10,7 +10,7 @@ var tpl = ' <label class="control-label">{label}</label>\
   
 describe('测试控件生成',function(){
 
-  var textField = new Form.Field.TextField({
+  var textField = new Form.Field.Text({
       name : 'a',
       render : '#row',
       label : '测试字段',

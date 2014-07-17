@@ -49,7 +49,7 @@ var selectField = Field.extend({
   _initSelect : function(select){
     var _self = this,
       items = _self.get('items');
-    BUI.use('bui/select',function(Select){
+    require.async('bui-select',function(Select){
       select.render = _self.getControlContainer();
       select.valueField = _self.getInnerControl();
       select.autoRender = true;

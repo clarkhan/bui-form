@@ -383,7 +383,7 @@ describe('测试datefield', function(){
   var DateUtil = BUI.Date,
     date = new Date();
    
-  var  dateField = new DateField({
+  var  dateField = new Form.Field.Date({
       render : '#row1',
       label : '日期字段',
       elCls : 'control-group span12',
@@ -464,7 +464,7 @@ describe('测试日期', function(){
   var DateUtil = BUI.Date,
     date = new Date();
    
-  var  dateField = new DateField({
+  var  dateField = new Form.Field.Date({
       render : '#row1',
       label : '日期字段',
       elCls : 'control-group span12',
@@ -517,7 +517,7 @@ describe('测试单选框', function(){
           {text:'选项2',value:'b'},
           {text:'选项3',value:'c'}
         ],
-    selectField = new Form.SelectField({
+    selectField = new Form.Field.Select({
       render : '#row1',
       label : '选择字段',
       items : data,
@@ -593,7 +593,7 @@ describe('测试多选框', function(){
           {text:'选项2',value:'b'},
           {text:'选项3',value:'c'}
         ],
-    selectField = new Form.SelectField({
+    selectField = new Form.Field.Select({
       render : '#row1',
       label : '选择字段',
       items : data,
@@ -638,7 +638,7 @@ describe('测试多选框', function(){
 
 //单选框，select 标签元素
 describe('测试单选框，select 标签元素', function(){
-  var select = new Form.SelectField({
+  var select = new Form.Field.Select({
     srcNode : '#s1',
     rules : {
       required:true
@@ -682,7 +682,7 @@ describe('单独显示文本，不允许编辑可以格式化', function(){
   function render(value){
     return value + '元';
   } 
-  var field = new Form.PlainField({
+  var field = new Form.Field.Plain({
     render : '#row',
     label : '纯文本字段',
     elCls : 'control-group span8',
@@ -718,7 +718,7 @@ describe('单独显示文本，不允许编辑可以格式化', function(){
 
 describe('测试列表', function(){
   describe('测试JS创建列表字段',function(){
-    var field = new Form.ListField({
+    var field = new Form.Field.List({
       render : '#row',
       label : '列表',
       elCls : 'control-group span8',
@@ -760,7 +760,7 @@ describe('测试列表', function(){
     });
   });
   describe('测试srcNode 创建列表字段',function(){
-    var field = new ListField({
+    var field = new Form.Field.List({
       srcNode : '#lf'
     });
     field.render(),
@@ -779,7 +779,7 @@ describe('测试列表', function(){
 
 describe('测试复选列表', function(){
   describe('测试srcNode 创建列表字段',function(){
-    var field = new Form.ListField({
+    var field = new Form.Field.List({
         render : '#row',
         label : '可勾选列表',
         elCls : 'control-group span8',
@@ -801,7 +801,7 @@ describe('测试复选列表', function(){
 
 describe('测试单选选列表', function(){
   describe('测试srcNode 创建列表字段',function(){
-    var field = new ListField({
+    var field = new Form.Field.List({
         render : '#row',
         label : '可勾选列表',
         elCls : 'control-group span8',
@@ -824,7 +824,7 @@ describe('测试单选选列表', function(){
 
 
 describe('测试复选选列表生成', function(){
-  var checkbox = new CheckBox({
+  var checkbox = new Form.Field.Checkbox({
     render : '#row',
     label : '勾选',
     value : 'a',

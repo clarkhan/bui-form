@@ -21,7 +21,9 @@
       "bui-list": "1.1.0",
       "bui-data": "1.1.0",
       "bui-calendar": "1.1.0",
-      "bui-overlay": "1.1.0"
+      "bui-overlay": "1.1.0",
+      "bui-select": "1.1.0",
+      "bui-toolbar": "1.1.0"
     },
     "devDependencies": {
       "expect.js": "0.3.1",
@@ -30,6 +32,7 @@
     "engines": {
       "seajs": "2.2.1"
     },
+    "buildArgs": "--ignore jquery",
     "tests": "tests/*.js"
   }
 }

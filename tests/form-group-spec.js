@@ -320,7 +320,7 @@ describe('测试级联选择框分组', function(){
     BUI.Form.Group.Select.addType('test',{
       data : data
     });
-    new Select({
+    new Form.Group.Select({
       srcNode : '#g10'
     }).render();
   })();  

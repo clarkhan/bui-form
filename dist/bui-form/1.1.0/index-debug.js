@@ -1,4 +1,4 @@
-define("bui-form/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/form-debug", "bui-form/1.1.0/src/row-debug", "bui-form/1.1.0/src/fieldgroup-debug", "bui-form/1.1.0/src/hform-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/field-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/group/base-debug", "bui-form/1.1.0/src/group/range-debug", "bui-form/1.1.0/src/group/check-debug", "bui-form/1.1.0/src/group/select-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/index-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/form-debug", "bui-form/1.1.0/src/row-debug", "bui-form/1.1.0/src/fieldgroup-debug", "bui-form/1.1.0/src/hform-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/field-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/group/base-debug", "bui-form/1.1.0/src/group/range-debug", "bui-form/1.1.0/src/group/check-debug", "bui-form/1.1.0/src/group/select-debug"], function(require, exports, module) {
   /**
    * @fileOverview form 命名空间入口
    * @ignore
@@ -20,13 +20,13 @@ define("bui-form/1.1.0/index-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1
   });
   module.exports = Form;
 });
-define("bui-form/1.1.0/src/tips-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-overlay/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/tips-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-overlay/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 输入提示信息
    * @author dxq613@gmail.com
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     prefix = BUI.prefix,
     Overlay = require("bui-overlay/1.1.0/index-debug").Overlay,
@@ -233,12 +233,12 @@ define("bui-form/1.1.0/src/tips-debug", ["jquery/1.9.1/jquery-debug", "bui-commo
   Tips.Item = tipItem;
   module.exports = Tips;
 });
-define("bui-form/1.1.0/src/fieldcontainer-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fieldcontainer-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单字段的容器扩展
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     Field = require("bui-form/1.1.0/src/field-debug"),
     GroupValid = require("bui-form/1.1.0/src/groupvalid-debug"),
@@ -579,20 +579,20 @@ define("bui-form/1.1.0/src/fieldcontainer-debug", ["jquery/1.9.1/jquery-debug", 
   container.View = containerView;
   module.exports = container;
 });
-define("bui-form/1.1.0/src/form-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/form-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 创建表单
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
+    FieldContainer = require("bui-form/1.1.0/src/fieldcontainer-debug"),
+    Component = BUI.Component,
     TYPE_SUBMIT = {
       NORMAL: 'normal',
       AJAX: 'ajax',
       IFRAME: 'iframe'
-    },
-    FieldContainer = require("bui-form/1.1.0/src/fieldcontainer-debug"),
-    Component = BUI.Component;
+    };
   var FormView = FieldContainer.View.extend({
     _uiSetMethod: function(v) {
       this.get('el').attr('method', v);
@@ -627,7 +627,7 @@ define("bui-form/1.1.0/src/form-debug", ["jquery/1.9.1/jquery-debug", "bui-commo
     },
     _initButtonBar: function(cfg) {
       var _self = this;
-      BUI.use('bui/toolbar', function(Toolbar) {
+      require.async('bui-toolbar', function(Toolbar) {
         buttonBar = new Toolbar.Bar(cfg);
         _self.set('buttonBar', buttonBar);
       });
@@ -958,7 +958,7 @@ define("bui-form/1.1.0/src/form-debug", ["jquery/1.9.1/jquery-debug", "bui-commo
   Form.View = FormView;
   module.exports = Form;
 });
-define("bui-form/1.1.0/src/row-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/row-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单里的一行元素
    * @ignore
@@ -996,7 +996,7 @@ define("bui-form/1.1.0/src/row-debug", ["jquery/1.9.1/jquery-debug", "bui-common
   });
   module.exports = Row;
 });
-define("bui-form/1.1.0/src/fieldgroup-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/group/base-debug", "bui-form/1.1.0/src/group/range-debug", "bui-form/1.1.0/src/group/check-debug", "bui-form/1.1.0/src/group/select-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fieldgroup-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/group/base-debug", "bui-form/1.1.0/src/group/range-debug", "bui-form/1.1.0/src/group/check-debug", "bui-form/1.1.0/src/group/select-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单文本域组，可以包含一个至多个字段
    * @author dxq613@gmail.com
@@ -1011,12 +1011,12 @@ define("bui-form/1.1.0/src/fieldgroup-debug", ["jquery/1.9.1/jquery-debug", "bui
   });
   return Group;
 });
-define("bui-form/1.1.0/src/hform-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/form-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/hform-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/form-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 垂直表单
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     Form = require("bui-form/1.1.0/src/form-debug");
   /**
@@ -1062,12 +1062,12 @@ define("bui-form/1.1.0/src/hform-debug", ["jquery/1.9.1/jquery-debug", "bui-comm
   });
   module.exports = Horizontal;
 });
-define("bui-form/1.1.0/src/rules-debug", ["jquery/1.9.1/jquery-debug", "bui-form/1.1.0/src/rule-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/rules-debug", ["jquery", "bui-form/1.1.0/src/rule-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 验证集合
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     Rule = require("bui-form/1.1.0/src/rule-debug");
 
   function toNumber(value) {
@@ -1632,7 +1632,7 @@ define("bui-form/1.1.0/src/rules-debug", ["jquery/1.9.1/jquery-debug", "bui-form
   });
   module.exports = rules;
 });
-define("bui-form/1.1.0/src/field-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/field-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单域的入口文件
    * @ignore
@@ -1657,12 +1657,12 @@ define("bui-form/1.1.0/src/field-debug", ["jquery/1.9.1/jquery-debug", "bui-comm
   });
   module.exports = Field;
 });
-define("bui-form/1.1.0/src/groupvalid-debug", ["jquery/1.9.1/jquery-debug", "bui-form/1.1.0/src/valid-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/groupvalid-debug", ["jquery", "bui-form/1.1.0/src/valid-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单分组验证
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     CLS_ERROR = 'x-form-error',
     Valid = require("bui-form/1.1.0/src/valid-debug");
   /**
@@ -1859,12 +1859,12 @@ define("bui-form/1.1.0/src/groupvalid-debug", ["jquery/1.9.1/jquery-debug", "bui
   GroupValid.View = GroupValidView;
   module.exports = GroupValid;
 });
-define("bui-form/1.1.0/src/fields/base-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/base-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单元素
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     Component = BUI.Component,
     TipItem = require("bui-form/1.1.0/src/tips-debug").Item,
@@ -2459,7 +2459,7 @@ define("bui-form/1.1.0/src/fields/base-debug", ["jquery/1.9.1/jquery-debug", "bu
   field.View = fieldView;
   module.exports = field;
 });
-define("bui-form/1.1.0/src/fields/text-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/text-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单文本域
    * @author dxq613@gmail.com
@@ -2476,13 +2476,13 @@ define("bui-form/1.1.0/src/fields/text-debug", ["bui-form/1.1.0/src/fields/base-
   });
   module.exports = textField;
 });
-define("bui-form/1.1.0/src/fields/date-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/date-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单日历域
    * @author dxq613@gmail.com
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     Field = require("bui-form/1.1.0/src/fields/base-debug"),
     DateUtil = BUI.Date;
@@ -2508,7 +2508,7 @@ define("bui-form/1.1.0/src/fields/date-debug", ["jquery/1.9.1/jquery-debug", "bu
     //初始化日历控件
     initDatePicker: function(datePicker) {
       var _self = this;
-      BUI.use('bui/calendar', function(Calendar) {
+      seajs.use('bui-calendar', function(Calendar) {
         datePicker.trigger = _self.getInnerControl();
         datePicker.autoRender = true;
         datePicker = new Calendar.DatePicker(datePicker);
@@ -2652,12 +2652,12 @@ define("bui-form/1.1.0/src/fields/date-debug", ["jquery/1.9.1/jquery-debug", "bu
   });
   module.exports = dateField;
 });
-define("bui-form/1.1.0/src/fields/select-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/select-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 模拟选择框在表单中
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     Field = require("bui-form/1.1.0/src/fields/base-debug");
 
@@ -2702,7 +2702,7 @@ define("bui-form/1.1.0/src/fields/select-debug", ["jquery/1.9.1/jquery-debug", "
     _initSelect: function(select) {
       var _self = this,
         items = _self.get('items');
-      BUI.use('bui/select', function(Select) {
+      require.async('bui-select', function(Select) {
         select.render = _self.getControlContainer();
         select.valueField = _self.getInnerControl();
         select.autoRender = true;
@@ -2872,7 +2872,7 @@ define("bui-form/1.1.0/src/fields/select-debug", ["jquery/1.9.1/jquery-debug", "
   });
   module.exports = selectField;
 });
-define("bui-form/1.1.0/src/fields/hidden-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/hidden-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 隐藏字段
    * @ignore
@@ -2902,7 +2902,7 @@ define("bui-form/1.1.0/src/fields/hidden-debug", ["bui-form/1.1.0/src/fields/bas
   });
   module.exports = hiddenField;
 });
-define("bui-form/1.1.0/src/fields/number-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/number-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单文本域
    * @author dxq613@gmail.com
@@ -2999,12 +2999,12 @@ define("bui-form/1.1.0/src/fields/number-debug", ["bui-form/1.1.0/src/fields/bas
     });
   module.exports = numberField;
 });
-define("bui-form/1.1.0/src/fields/check-debug", ["jquery/1.9.1/jquery-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/check-debug", ["jquery", "bui-form/1.1.0/src/fields/base-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview  可勾选字段
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     Field = require("bui-form/1.1.0/src/fields/base-debug");
   /**
    * 可选中菜单域
@@ -3099,12 +3099,12 @@ define("bui-form/1.1.0/src/fields/check-debug", ["jquery/1.9.1/jquery-debug", "b
   });
   module.exports = checkField;
 });
-define("bui-form/1.1.0/src/fields/radio-debug", [], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/radio-debug", ["bui-form/1.1.0/src/fields/check-debug", "jquery", "bui-form/1.1.0/src/fields/base-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview  单选框表单域
    * @ignore
    */
-  var CheckField = required('/check');
+  var CheckField = require("bui-form/1.1.0/src/fields/check-debug");
   /**
    * 表单单选域
    * @class BUI.Form.Field.Radio
@@ -3152,12 +3152,12 @@ define("bui-form/1.1.0/src/fields/radio-debug", [], function(require, exports, m
   });
   module.exports = RadioField;
 });
-define("bui-form/1.1.0/src/fields/checkbox-debug", [], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/checkbox-debug", ["bui-form/1.1.0/src/fields/check-debug", "jquery", "bui-form/1.1.0/src/fields/base-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview  复选框表单域
    * @ignore
    */
-  var CheckField = required('./check');
+  var CheckField = require("bui-form/1.1.0/src/fields/check-debug");
   /**
    * 表单复选域
    * @class BUI.Form.Field.Checkbox
@@ -3189,12 +3189,12 @@ define("bui-form/1.1.0/src/fields/checkbox-debug", [], function(require, exports
   });
   module.exports = CheckBoxField;
 });
-define("bui-form/1.1.0/src/fields/plain-debug", ["jquery/1.9.1/jquery-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/plain-debug", ["jquery", "bui-form/1.1.0/src/fields/base-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 仅仅用于显示文本，不能编辑的字段
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     Field = require("bui-form/1.1.0/src/fields/base-debug");
   var PlainFieldView = Field.View.extend({
     _uiSetValue: function(v) {
@@ -3270,12 +3270,12 @@ define("bui-form/1.1.0/src/fields/plain-debug", ["jquery/1.9.1/jquery-debug", "b
   });
   module.exports = PlainField;
 });
-define("bui-form/1.1.0/src/fields/list-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/list-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单中的列表，每个列表后有个隐藏域用来存储数据
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug"),
     List = require("bui-list/1.1.0/index-debug"),
     Field = require("bui-form/1.1.0/src/fields/base-debug");
@@ -3437,7 +3437,7 @@ define("bui-form/1.1.0/src/fields/list-debug", ["jquery/1.9.1/jquery-debug", "bu
   });
   module.exports = List;
 });
-define("bui-form/1.1.0/src/fields/textarea-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/textarea-debug", ["bui-form/1.1.0/src/fields/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单文本域
    * @author dxq613@gmail.com
@@ -3497,7 +3497,7 @@ define("bui-form/1.1.0/src/fields/textarea-debug", ["bui-form/1.1.0/src/fields/b
   });
   module.exports = TextAreaField;
 });
-define("bui-form/1.1.0/src/fields/uploader-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/uploader-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 模拟选择框在表单中
    * @ignore
@@ -3635,7 +3635,7 @@ define("bui-form/1.1.0/src/fields/uploader-debug", ["jquery/1.9.1/jquery-debug",
   });
   module.exports = uploaderField;
 });
-define("bui-form/1.1.0/src/fields/checklist-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/checklist-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 可勾选的列表，模拟多个checkbox
    * @ignore
@@ -3668,7 +3668,7 @@ define("bui-form/1.1.0/src/fields/checklist-debug", ["jquery/1.9.1/jquery-debug"
   });
   module.exports = CheckList;
 });
-define("bui-form/1.1.0/src/fields/radiolist-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/fields/radiolist-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 可勾选的列表，模拟多个radio
    * @ignore
@@ -3700,7 +3700,7 @@ define("bui-form/1.1.0/src/fields/radiolist-debug", ["jquery/1.9.1/jquery-debug"
   });
   module.exports = RadioList;
 });
-define("bui-form/1.1.0/src/valid-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/valid-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单验证
    * @ignore
@@ -4033,12 +4033,12 @@ define("bui-form/1.1.0/src/valid-debug", ["jquery/1.9.1/jquery-debug", "bui-comm
   Valid.View = ValidView;
   module.exports = Valid;
 });
-define("bui-form/1.1.0/src/remote-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/remote-debug", ["jquery", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单异步请求，异步校验、远程获取数据
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug");
   /**
    * @class BUI.Form.RemoteView
@@ -4310,12 +4310,12 @@ define("bui-form/1.1.0/src/remote-debug", ["jquery/1.9.1/jquery-debug", "bui-com
   Remote.View = RemoteView;
   module.exports = Remote;
 });
-define("bui-form/1.1.0/src/rule-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/rule-debug", ["jquery", "bui-common/1.1.0/common-debug"], function(require, exports, module) {
   /**
    * @fileOverview 验证规则
    * @ignore
    */
-  var $ = require("jquery/1.9.1/jquery-debug"),
+  var $ = require("jquery"),
     BUI = require("bui-common/1.1.0/common-debug");
   /**
    * @class BUI.Form.Rule
@@ -4420,7 +4420,7 @@ define("bui-form/1.1.0/src/rule-debug", ["jquery/1.9.1/jquery-debug", "bui-commo
   });
   module.exports = Rule;
 });
-define("bui-form/1.1.0/src/group/base-debug", ["jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/group/base-debug", ["jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 表单文本域组，可以包含一个至多个字段
    * @author dxq613@gmail.com
@@ -4451,7 +4451,7 @@ define("bui-form/1.1.0/src/group/base-debug", ["jquery/1.9.1/jquery-debug", "bui
   });
   module.exports = Group;
 });
-define("bui-form/1.1.0/src/group/range-debug", ["bui-form/1.1.0/src/group/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/group/range-debug", ["bui-form/1.1.0/src/group/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 范围的字段组，比如日期范围等
    * @ignore
@@ -4522,7 +4522,7 @@ define("bui-form/1.1.0/src/group/range-debug", ["bui-form/1.1.0/src/group/base-d
   });
   module.exports = Range;
 });
-define("bui-form/1.1.0/src/group/check-debug", ["bui-form/1.1.0/src/group/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/group/check-debug", ["bui-form/1.1.0/src/group/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-data/1.1.0/index-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 选择分组，包含，checkbox,radio
    * @ignore
@@ -4598,7 +4598,7 @@ define("bui-form/1.1.0/src/group/check-debug", ["bui-form/1.1.0/src/group/base-d
   });
   module.exports = Check;
 });
-define("bui-form/1.1.0/src/group/select-debug", ["bui-form/1.1.0/src/group/base-debug", "jquery/1.9.1/jquery-debug", "bui-common/1.1.0/common-debug", "bui-data/1.1.0/index-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
+define("bui-form/1.1.0/src/group/select-debug", ["bui-form/1.1.0/src/group/base-debug", "jquery", "bui-common/1.1.0/common-debug", "bui-data/1.1.0/index-debug", "bui-form/1.1.0/src/fieldcontainer-debug", "bui-form/1.1.0/src/field-debug", "bui-form/1.1.0/src/groupvalid-debug", "bui-form/1.1.0/src/fields/base-debug", "bui-form/1.1.0/src/fields/text-debug", "bui-form/1.1.0/src/fields/date-debug", "bui-form/1.1.0/src/fields/select-debug", "bui-form/1.1.0/src/fields/hidden-debug", "bui-form/1.1.0/src/fields/number-debug", "bui-form/1.1.0/src/fields/check-debug", "bui-form/1.1.0/src/fields/radio-debug", "bui-form/1.1.0/src/fields/checkbox-debug", "bui-form/1.1.0/src/fields/plain-debug", "bui-form/1.1.0/src/fields/list-debug", "bui-form/1.1.0/src/fields/textarea-debug", "bui-form/1.1.0/src/fields/uploader-debug", "bui-form/1.1.0/src/fields/checklist-debug", "bui-form/1.1.0/src/fields/radiolist-debug", "bui-form/1.1.0/src/tips-debug", "bui-form/1.1.0/src/valid-debug", "bui-form/1.1.0/src/remote-debug", "bui-overlay/1.1.0/index-debug", "bui-form/1.1.0/src/rules-debug", "bui-form/1.1.0/src/rule-debug", "bui-list/1.1.0/index-debug"], function(require, exports, module) {
   /**
    * @fileOverview 选择框分组
    * @ignore

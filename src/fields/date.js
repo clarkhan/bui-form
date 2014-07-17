@@ -34,7 +34,7 @@ var dateField = Field.extend({
   initDatePicker : function(datePicker){
     var _self = this;
 
-    BUI.use('bui/calendar',function(Calendar){
+    seajs.use('bui-calendar',function(Calendar){
       datePicker.trigger = _self.getInnerControl();
       datePicker.autoRender = true;
       datePicker = new Calendar.DatePicker(datePicker);

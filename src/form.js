@@ -50,7 +50,7 @@ var Form = FieldContainer.extend({
   _initButtonBar : function(cfg){
     var _self = this;
 
-    BUI.use('bui/toolbar',function(Toolbar){
+    require.async('bui-toolbar', function(Toolbar){
       buttonBar = new Toolbar.Bar(cfg);
       _self.set('buttonBar',buttonBar);
     });
