@@ -30,7 +30,7 @@ var uploaderField = Field.extend({
       children = _self.get('children'),
       uploader = _self.get('uploader') || {};
 
-    BUI.use('bui/uploader', function(Uploader){
+    require.async('bui/uploader', function(Uploader){
       uploader.render = _self.getControlContainer();
       uploader.autoRender = true;
       uploader = new Uploader.Uploader(uploader);

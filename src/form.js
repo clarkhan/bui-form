@@ -169,7 +169,7 @@ var Form = FieldContainer.extend({
       submitType = _self.get('submitType'),
       submitMask = _self.get('submitMask');
     if(submitType === TYPE_SUBMIT.AJAX && submitMask){
-      BUI.use('bui/mask',function(Mask){
+      require.async('bui/mask',function(Mask){
         var cfg = $.isPlainObject(submitMask) ? submitMask : {};
         submitMask = new Mask.LoadMask(BUI.mix({el : _self.get('el')},cfg));
         _self.set('submitMask',submitMask);
