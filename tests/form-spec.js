@@ -4,6 +4,10 @@ var $ = require('jquery'),
   Tips = require('../src/tips'),
   TipItem = Tips.Item;
 
+
+require('bui-dpl/css/bs3/dpl.css');
+require('bui-dpl/css/bs3/bui.css');
+
 describe('批量添加提示',function(){
   var form = $('form')[0];
 
