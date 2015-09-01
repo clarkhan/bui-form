@@ -31,13 +31,13 @@ var checkField = Field.extend({
   _setControlChecked : function(checked){
     var _self = this,
       innerControl = _self.getInnerControl();
-    innerControl.attr('checked',!!checked);
+    innerControl.prop('checked',!!checked);
   },
   //获取是否勾选
   _getControlChecked : function(){
     var _self = this,
       innerControl = _self.getInnerControl();
-    return !!innerControl.attr('checked');
+    return !!innerControl.prop('checked');
   },
   //覆盖 设置值的方法
   _uiSetValue : function(v){
@@ -93,7 +93,7 @@ var checkField = Field.extend({
   },
   PARSER : {
     checked : function(el){
-      return !!el.attr('checked');
+      return !!el.prop('checked');
     }
   }
 },{
